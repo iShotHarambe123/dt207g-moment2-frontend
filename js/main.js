@@ -158,5 +158,12 @@ function formatDatePeriod(startDate, endDate) {
     return `${start} - ${end}`;
 }
 
+// Hjälpfunktion textvisning
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
 // Gör funktionen tillgänglig globalt så HTML kan anropa den
 window.deleteWork = deleteWork;
