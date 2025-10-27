@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om webbapplikationen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Arbetserfarenheter</h1>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="add.html">Lägg till</a></li>
+                <li><a href="about.html" class="active">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Om webbapplikationen</h2>
+
+        <section>
+            <h3>Syfte</h3>
+            <p>
+                Denna webbapplikation är utvecklad för att hantera arbetserfarenheter.
+                Den tillåter användare visa, lägga till och ta bort arbetserfarenheter
+                från en databas via ett REST API.
+            </p>
+        </section>
+
+        <section>
+            <h3>Teknisk information</h3>
+            <p><strong>Frontend:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Backend:</strong> Node.js, Express</p>
+            <p><strong>Databas:</strong> SQLite</p>
+            <p><strong>API:</strong> REST API med JSON-format</p>
+        </section>
+
+        <section>
+            <h3>Databasstruktur</h3>
+            <p>Applikationen använder SQLite som databasserver med följande tabell:</p>
+
+            <h4>Tabell: workexperience</h4>
+            <ul>
+                <li><strong>id:</strong> Primärnyckel (auto-increment)</li>
+                <li><strong>companyname:</strong> Företagsnamn</li>
+                <li><strong>jobtitle:</strong> Jobbtitel</li>
+                <li><strong>location:</strong> Arbetsplats</li>
+                <li><strong>startdate:</strong> Startdatum (YYYY-MM-DD)</li>
+                <li><strong>enddate:</strong> Slutdatum (valfri)</li>
+                <li><strong>description:</strong> Arbetsbeskrivning</li>
+                <li><strong>created_at:</strong> Tidsstämpel för skapande</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>API-endpoints</h3>
+            <ul>
+                <li><strong>GET /api/workexperience</strong> - Hämta alla arbetserfarenheter</li>
+                <li><strong>POST /api/workexperience</strong> - Skapa ny arbetslivserfarenhet</li>
+                <li><strong>DELETE /api/workexperience/:id</strong> - Ta bort arbetslivserfarenhet</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Slutsatser</h3>
+            <p>
+                Genom att utveckla denna applikation har jag lärt mig att:
+            </p>
+            <ul>
+                <li>Skapa REST API:er med Node.js och Express</li>
+                <li>Använda SQLite som databas</li>
+                <li>Implementera CRUD-operationer</li>
+                <li>Använda Fetch API för frontend-backend kommunikation</li>
+                <li>Hantera asynkron JavaScript</li>
+                <li>Validera data på både klient och serversidan</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

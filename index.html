@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbetserfarenheter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Arbetserfarenheter</h1>
+            <ul>
+                <li><a href="index.html" class="active">Hem</a></li>
+                <li><a href="add.html">Lägg till</a></li>
+                <li><a href="about.html">Om</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Alla arbetserfarenheter</h2>
+
+        <div id="loading" style="display: none;">
+            <p>Laddar...</p>
+        </div>
+
+        <div id="error-message" style="display: none;">
+            <p id="error-text"></p>
+            <button id="retry-btn">Försök igen</button>
+        </div>
+
+        <div id="work-list">
+            <!-- Work experiences will be loaded here -->
+        </div>
+
+        <div id="empty-state" style="display: none;">
+            <p>Inga arbetserfarenheter hittades.</p>
+            <a href="add.html">Lägg till din första arbetslivserfarenhet</a>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+    "name": "cv-portal-frontend",
+    "version": "1.0.0",
+    "description": "Frontend web application for managing work experiences",
+    "main": "index.html",
+    "scripts": {
+        "start": "python -m http.server 8000",
+        "serve": "npx http-server -p 8000 -c-1"
+    },
+    "keywords": [
+        "html",
+        "css",
+        "javascript",
+        "frontend",
+        "work-experience",
+        "cv"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "http-server": "^14.1.1"
+    }
+}
